@@ -18,6 +18,7 @@ REGLAS_CLASIFICACION = [
         "palabras_clave": [
             "excepción",
             "reclamo",
+            "reclamar",
             "negociar",
             "urgente",
             "queja",

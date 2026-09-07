@@ -125,3 +125,12 @@ def test_facturacion_sin_tilde_es_categoria_c():
     resultado = clasificar_por_reglas(texto)
     assert resultado["categoria"] == "c"
     assert resultado["respuesta"] == RESPUESTA_C
+
+
+# --- Keyword "reclamar" (forma verbal de "reclamo") activa categoría d ---
+
+def test_reclamar_es_categoria_d():
+    texto = normalizar("El producto que recibí no es lo que esperaba, quiero reclamar.")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "d"
+    assert resultado["respuesta"] == RESPUESTA_D
