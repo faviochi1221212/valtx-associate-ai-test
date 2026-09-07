@@ -37,7 +37,8 @@
       "¿Cómo solicito un producto del catálogo?",
       "¿Cuáles son los pasos para pedir un servicio nuevo?",
       "¿Cómo pido un producto?",
-      "¿Cómo solicito un servicio?"
+      "¿Cómo solicito un servicio?",
+      "¿Qué información debo incluir en la solicitud?"
     ],
     "respuesta": "1. Ingresar al portal interno y abrir el formulario F-01 (Solicitud de producto/servicio). 2. Indicar el código del producto o servicio (ver catálogo), la cantidad y el área solicitante. 3. Adjuntar la justificación cuando el monto supere el límite del área. 4. Enviar el formulario. Se puede incluir más de un producto en la misma solicitud (una línea por ítem). 5. La solicitud pasa a revisión y aprobación."
   },
@@ -85,7 +86,8 @@
       "¿Qué necesito para hacer una devolución?",
       "¿Necesito el número de solicitud para devolver?",
       "¿El empaque original es obligatorio para la devolución?",
-      "¿Cómo hago una devolución?"
+      "¿Cómo hago una devolución?",
+      "quiero saber cómo devuelvo un producto por favor"
     ],
     "respuesta": "El producto debe estar sin uso, con empaque original y el número de solicitud."
   },
@@ -94,7 +96,8 @@
       "¿Cuánto dura la garantía de los productos?",
       "¿Cuánto dura la garantía?",
       "¿Cómo funciona la garantía de los productos?",
-      "garantía cuánto es"
+      "garantía cuánto es",
+      "¿El Producto Alfa viene con garantía extendida?"
     ],
     "respuesta": "12 meses por defectos de fábrica."
   },
