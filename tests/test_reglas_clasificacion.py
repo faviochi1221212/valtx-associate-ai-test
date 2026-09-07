@@ -134,3 +134,96 @@ def test_reclamar_es_categoria_d():
     resultado = clasificar_por_reglas(texto)
     assert resultado["categoria"] == "d"
     assert resultado["respuesta"] == RESPUESTA_D
+
+
+# --- Keywords nuevas para huecos de cobertura detectados en el QA de HU4 ---
+
+def test_trimestre_y_fecha_limite_es_categoria_b():
+    texto = normalizar("¿Cuál es la fecha límite para pedidos de este trimestre?")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "b"
+    assert resultado["respuesta"] == RESPUESTA_B
+
+
+def test_sla_es_categoria_b():
+    texto = normalizar("¿Cuál es el tiempo de atención (SLA) de una solicitud?")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "b"
+    assert resultado["respuesta"] == RESPUESTA_B
+
+
+def test_cuotas_es_categoria_b():
+    texto = normalizar("¿Puedo pagar en cuotas?")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "b"
+    assert resultado["respuesta"] == RESPUESTA_B
+
+
+def test_soporte_tecnico_es_categoria_b():
+    texto = normalizar("¿Ofrecen soporte técnico después de la compra?")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "b"
+    assert resultado["respuesta"] == RESPUESTA_B
+
+
+def test_certificaciones_es_categoria_b():
+    texto = normalizar("¿Tienen certificaciones de calidad?")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "b"
+    assert resultado["respuesta"] == RESPUESTA_B
+
+
+def test_confidencialidad_es_categoria_b():
+    texto = normalizar("¿Cuál es la política de confidencialidad de datos?")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "b"
+    assert resultado["respuesta"] == RESPUESTA_B
+
+
+def test_envios_y_provincia_es_categoria_b():
+    texto = normalizar("¿Hacen envíos a provincia?")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "b"
+    assert resultado["respuesta"] == RESPUESTA_B
+
+
+def test_proximo_lote_es_categoria_b():
+    texto = normalizar("¿Cuándo llega el próximo lote del Producto Gamma?")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "b"
+    assert resultado["respuesta"] == RESPUESTA_B
+
+
+def test_recursos_humanos_es_categoria_c():
+    texto = normalizar("¿Dónde queda la oficina de recursos humanos?")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "c"
+    assert resultado["respuesta"] == RESPUESTA_C
+
+
+def test_comedor_es_categoria_c():
+    texto = normalizar("¿Tienen un comedor en la oficina?")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "c"
+    assert resultado["respuesta"] == RESPUESTA_C
+
+
+def test_proveedor_es_categoria_d():
+    texto = normalizar("Quisiera proponer trabajar con un nuevo proveedor, ¿a quién contacto?")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "d"
+    assert resultado["respuesta"] == RESPUESTA_D
+
+
+def test_reembolso_es_categoria_d():
+    texto = normalizar("Quiero un reembolso completo aunque usé el producto.")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "d"
+    assert resultado["respuesta"] == RESPUESTA_D
+
+
+def test_hablar_con_alguien_es_categoria_d():
+    texto = normalizar("Necesito hablar con alguien, es complicado de explicar por chat.")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "d"
+    assert resultado["respuesta"] == RESPUESTA_D
