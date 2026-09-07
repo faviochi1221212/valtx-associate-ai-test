@@ -1,0 +1,146 @@
+[
+  {
+    "preguntas": [
+      "¿Qué incluye el catálogo de productos y servicios?",
+      "¿Qué productos incluye el catálogo?",
+      "¿Qué hay disponible en el catálogo?"
+    ],
+    "respuesta": "El catálogo comercial incluye, entre otros: Producto Alfa (línea estándar de uso general), Producto Beta (versión reforzada del Alfa, mayor durabilidad) y Servicio Gamma (servicio de implementación y acompañamiento)."
+  },
+  {
+    "preguntas": [
+      "¿Qué es el Producto Alfa?",
+      "¿A qué se refiere el código COD-ALF?",
+      "¿Qué características tiene el Producto Alfa?"
+    ],
+    "respuesta": "Línea estándar de uso general."
+  },
+  {
+    "preguntas": [
+      "¿Qué es el Producto Beta?",
+      "¿Qué características tiene el Producto Beta?",
+      "¿En qué se diferencia el Producto Beta del Alfa?"
+    ],
+    "respuesta": "Versión reforzada del Alfa, mayor durabilidad."
+  },
+  {
+    "preguntas": [
+      "¿Qué es el Servicio Gamma?",
+      "¿En qué consiste el Servicio Gamma?",
+      "¿Qué incluye el Servicio Gamma?"
+    ],
+    "respuesta": "Servicio de implementación y acompañamiento."
+  },
+  {
+    "preguntas": [
+      "¿Cómo solicito un producto o servicio?",
+      "¿Cómo solicito un producto del catálogo?",
+      "¿Cuáles son los pasos para pedir un servicio nuevo?",
+      "¿Cómo pido un producto?",
+      "¿Cómo solicito un servicio?"
+    ],
+    "respuesta": "1. Ingresar al portal interno y abrir el formulario F-01 (Solicitud de producto/servicio). 2. Indicar el código del producto o servicio (ver catálogo), la cantidad y el área solicitante. 3. Adjuntar la justificación cuando el monto supere el límite del área. 4. Enviar el formulario. Se puede incluir más de un producto en la misma solicitud (una línea por ítem). 5. La solicitud pasa a revisión y aprobación."
+  },
+  {
+    "preguntas": [
+      "¿Qué es el formulario F-01?",
+      "¿Dónde encuentro el formulario de solicitud?",
+      "¿Dónde está el formulario para solicitar?"
+    ],
+    "respuesta": "Es el formulario de Solicitud de producto/servicio que se abre desde el portal interno."
+  },
+  {
+    "preguntas": [
+      "¿Puedo incluir más de un producto en la misma solicitud?",
+      "¿Puedo pedir varios productos en una sola solicitud?"
+    ],
+    "respuesta": "Sí, se puede incluir más de un producto en la misma solicitud (una línea por ítem)."
+  },
+  {
+    "preguntas": [
+      "¿Puedo cancelar una solicitud antes de que sea aprobada?",
+      "¿Puedo cancelar una solicitud ya enviada?",
+      "¿Puedo cancelar una solicitud?"
+    ],
+    "respuesta": "Sí, mientras no haya sido aprobada, desde el portal interno."
+  },
+  {
+    "preguntas": [
+      "¿Puedo modificar una solicitud ya enviada?",
+      "¿Puedo modificar mi solicitud antes de que la aprueben?"
+    ],
+    "respuesta": "Sí, antes de la aprobación."
+  },
+  {
+    "preguntas": [
+      "¿Cuál es el plazo para devolver un producto?",
+      "¿Cuánto tiempo tengo para devolver algo?",
+      "¿Desde cuándo cuentan los 15 días de devolución?"
+    ],
+    "respuesta": "15 días calendario desde la recepción del producto."
+  },
+  {
+    "preguntas": [
+      "¿Qué requisitos debo cumplir para devolver un producto?",
+      "¿Qué necesito para hacer una devolución?",
+      "¿Necesito el número de solicitud para devolver?",
+      "¿El empaque original es obligatorio para la devolución?",
+      "¿Cómo hago una devolución?"
+    ],
+    "respuesta": "El producto debe estar sin uso, con empaque original y el número de solicitud."
+  },
+  {
+    "preguntas": [
+      "¿Cuánto dura la garantía de los productos?",
+      "¿Cuánto dura la garantía?",
+      "¿Cómo funciona la garantía de los productos?",
+      "garantía cuánto es"
+    ],
+    "respuesta": "12 meses por defectos de fábrica."
+  },
+  {
+    "preguntas": [
+      "¿Qué cubre la garantía?",
+      "¿La garantía cubre defectos de fábrica?"
+    ],
+    "respuesta": "Cubre defectos de fábrica durante 12 meses desde la recepción."
+  },
+  {
+    "preguntas": [
+      "¿Qué pasa si el producto llega dañado fuera del plazo de devolución?",
+      "Un producto llegó dañado y ya pasó el plazo de devolución, ¿qué hacen?"
+    ],
+    "respuesta": "Los casos especiales (producto dañado fuera de plazo, devoluciones no estándar, excepciones) requieren evaluación del equipo comercial caso por caso."
+  },
+  {
+    "preguntas": [
+      "¿Qué descuento aplica si pido 50 unidades o más?",
+      "¿Qué descuento aplica para pedidos de 60 unidades?",
+      "¿Hay algún descuento por volumen?"
+    ],
+    "respuesta": "Volumen del pedido ≥ 50 unidades: 5% de descuento."
+  },
+  {
+    "preguntas": [
+      "¿Qué descuento aplica si pido 100 unidades o más?",
+      "¿Y para un pedido de 120 unidades cuánto de descuento hay?",
+      "¿Qué descuento aplica para pedidos de 200 unidades?"
+    ],
+    "respuesta": "Volumen del pedido ≥ 100 unidades: 10% de descuento."
+  },
+  {
+    "preguntas": [
+      "¿Puedo obtener un descuento mayor al establecido por volumen?",
+      "Necesito un descuento mayor al de la tabla, ¿pueden hacer una excepción?"
+    ],
+    "respuesta": "Los descuentos mayores o condiciones especiales requieren aprobación de la jefatura comercial."
+  },
+  {
+    "preguntas": [
+      "¿Dónde se publican las promociones temporales?",
+      "¿Qué promoción está vigente este mes?",
+      "¿Sigue vigente el descuento de fin de año?"
+    ],
+    "respuesta": "Se publican en el sistema comercial y no se incluyen en este documento."
+  }
+]
