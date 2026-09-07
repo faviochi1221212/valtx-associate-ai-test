@@ -107,13 +107,6 @@
   },
   {
     "preguntas": [
-      "¿Qué pasa si el producto llega dañado fuera del plazo de devolución?",
-      "Un producto llegó dañado y ya pasó el plazo de devolución, ¿qué hacen?"
-    ],
-    "respuesta": "Los casos especiales (producto dañado fuera de plazo, devoluciones no estándar, excepciones) requieren evaluación del equipo comercial caso por caso."
-  },
-  {
-    "preguntas": [
       "¿Qué descuento aplica si pido 50 unidades o más?",
       "¿Qué descuento aplica para pedidos de 60 unidades?",
       "¿Hay algún descuento por volumen?"
@@ -127,13 +120,6 @@
       "¿Qué descuento aplica para pedidos de 200 unidades?"
     ],
     "respuesta": "Volumen del pedido ≥ 100 unidades: 10% de descuento."
-  },
-  {
-    "preguntas": [
-      "¿Puedo obtener un descuento mayor al establecido por volumen?",
-      "Necesito un descuento mayor al de la tabla, ¿pueden hacer una excepción?"
-    ],
-    "respuesta": "Los descuentos mayores o condiciones especiales requieren aprobación de la jefatura comercial."
   },
   {
     "preguntas": [
