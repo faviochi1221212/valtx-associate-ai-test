@@ -123,6 +123,34 @@ Baseline = porcentaje esperado por categoría, calculado a mano revisando las 80
 consultas una por una antes de construir el sistema. Las 5 categorías quedan dentro del
 margen de tolerancia definido (3 puntos porcentuales).
 
+## Demo en vivo
+
+Con el servidor corriendo (`uvicorn app:app --reload`), estas dos páginas muestran el
+sistema en acción sin necesidad de usar la terminal:
+
+**Panel de medición** (`/medicion`) — resultado de clasificar las 80 consultas reales
+entregadas para la prueba, comparado contra el baseline calculado a mano:
+
+![Panel de medición](docs/capturas/caso-medicion.png)
+
+**Prueba individual** (`/chat`) — para escribir una consulta y ver en vivo cómo la
+clasifica y responde:
+
+![Demo de chat](docs/capturas/caso-uso-1.png)
+
+## Casos de uso — una por categoría
+
+| # | Consulta | Categoría | Captura |
+|---|---|---|---|
+| 1 | "¿Cuánto dura la garantía?" | **a** — responde con lo documentado | [ver](docs/capturas/caso-uso-1.png) |
+| 2 | "¿Cuál es el precio actual del Producto Alfa?" | **b** — dato cambiante, no documentado | [ver](docs/capturas/caso-uso-2.png) |
+| 3 | "¿Cómo reseteo mi contraseña del correo?" | **c** — fuera de alcance del área comercial | [ver](docs/capturas/caso-uso-3.png) |
+| 4 | "Necesito una excepción con mi descuento" | **d** — requiere revisión de una persona | [ver](docs/capturas/caso-uso-4.png) |
+| 5 | "Hola, tengo una duda" | **e** — no se entendió, se pide reformular | [ver](docs/capturas/caso-uso-5.png) |
+
+Cada fila muestra una categoría distinta del sistema, probada en vivo contra el mismo
+endpoint (`POST /consulta`) que usarían los canales reales de producción.
+
 ## Limitaciones conocidas
 
 - La categoría "c" no distingue entre RRHH e IT; usa un mensaje genérico de
