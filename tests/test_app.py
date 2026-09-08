@@ -119,3 +119,53 @@ def test_rate_limit_excedido_devuelve_429(monkeypatch):
     assert respuesta_1.status_code == 200
     assert respuesta_2.status_code == 200
     assert respuesta_3.status_code == 429
+
+
+def test_medicion_devuelve_200_con_las_5_categorias():
+    respuesta = client.get("/medicion")
+
+    assert respuesta.status_code == 200
+    html = respuesta.text
+    for categoria in ("a", "b", "c", "d", "e"):
+        assert f"<td>{categoria}</td>" in html
+
+
+def test_medicion_explica_categorias_y_columnas():
+    respuesta = client.get("/medicion")
+
+    html = respuesta.text
+    assert "juicio humano" in html
+    assert "Baseline" in html and "calculado a mano" in html
+    assert "3 puntos porcentuales" in html
+
+
+def test_chat_devuelve_200_con_formulario():
+    respuesta = client.get("/chat")
+
+    assert respuesta.status_code == 200
+    html = respuesta.text
+    assert "<form" in html
+    assert 'name="texto"' in html
+    assert 'name="canal"' in html
+
+
+def test_chat_explica_que_hace_la_pagina_y_enlaza_medicion():
+    respuesta = client.get("/chat")
+
+    html = respuesta.text
+    assert "consulta individual" in html
+    assert '/medicion' in html
+
+
+def test_chat_incluye_explicaciones_de_categoria_para_mostrar_la_relevante():
+    respuesta = client.get("/chat")
+
+    html = respuesta.text
+    assert "EXPLICACION_CATEGORIAS" in html
+    assert "juicio humano" in html
+
+
+def test_medicion_y_chat_tienen_estilo_css_inline():
+    for ruta in ("/medicion", "/chat"):
+        respuesta = client.get(ruta)
+        assert "<style>" in respuesta.text
