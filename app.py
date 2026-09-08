@@ -37,11 +37,11 @@ MAX_LONGITUD_TEXTO = 500
 # para la leyenda de las 5, /chat lo reutiliza (embebido como JSON para el
 # JS del cliente) para mostrar solo la explicación de la categoría obtenida.
 EXPLICACION_CATEGORIAS = {
-    "a": "la consulta se responde directamente con información de los documentos de referencia (catálogo, proceso de solicitud, garantía, etc.).",
-    "b": "la consulta depende de un dato que cambia con el tiempo y no está documentado (precio, stock, promoción) -- se informa que debe confirmarse en el sistema comercial.",
-    "c": "la consulta no es del área comercial (RRHH, IT) -- se redirige.",
-    "d": "la consulta requiere juicio humano (excepción, reclamo, negociación) -- se genera un ticket para el equipo comercial.",
-    "e": "la consulta es ambigua o no se pudo identificar -- se pide reformular.",
+    "a": "el sistema puede responder directamente, porque ya tiene la información necesaria (por ejemplo, sobre el catálogo, cómo pedir un producto o la garantía).",
+    "b": "el sistema no puede dar una respuesta exacta porque se trata de algo que cambia seguido (como el precio, el stock o una promoción) y esa información no está guardada aquí -- le indica a la persona que lo confirme directamente en el sistema comercial.",
+    "c": "la pregunta no es un tema del área comercial (por ejemplo, algo de Recursos Humanos o de sistemas) -- el sistema la redirige a quien corresponda.",
+    "d": "la consulta necesita que una persona del equipo comercial la revise, porque es un caso especial, un reclamo o algo que hay que negociar directamente.",
+    "e": "el sistema no logró entender bien la pregunta -- le pide a la persona que la explique de otra manera.",
 }
 
 _CSS_COMUN = """
@@ -155,6 +155,15 @@ tr.fila-e {{ background: #eeeeee; }}
 <div class="pagina">
 <h1>Medición de clasificación</h1>
 <p>Total: {total} consultas</p>
+
+<p>Cuando alguien del área comercial recibe una pregunta (sobre
+productos, plazos, garantías, etc.), este sistema la lee y decide
+automáticamente qué hacer con ella: si puede responderla solo con la
+información que ya tiene, si necesita avisar que ese dato cambia
+seguido y no está aquí, si no es un tema que le corresponda, si debe
+pasarla a una persona para que decida, o si simplemente no logró
+entender la pregunta. Las letras a, b, c, d y e de la tabla de abajo
+representan cada una de esas cinco situaciones.</p>
 
 <h2>¿Qué significa cada categoría?</h2>
 <ul>

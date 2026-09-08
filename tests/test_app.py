@@ -134,9 +134,16 @@ def test_medicion_explica_categorias_y_columnas():
     respuesta = client.get("/medicion")
 
     html = respuesta.text
-    assert "juicio humano" in html
+    assert "una persona del equipo comercial la revise" in html
     assert "Baseline" in html and "calculado a mano" in html
     assert "3 puntos porcentuales" in html
+
+
+def test_medicion_tiene_parrafo_introductorio_en_lenguaje_simple():
+    respuesta = client.get("/medicion")
+
+    html = respuesta.text
+    assert "representan cada una de esas cinco situaciones" in html
 
 
 def test_chat_devuelve_200_con_formulario():
@@ -162,7 +169,7 @@ def test_chat_incluye_explicaciones_de_categoria_para_mostrar_la_relevante():
 
     html = respuesta.text
     assert "EXPLICACION_CATEGORIAS" in html
-    assert "juicio humano" in html
+    assert "una persona del equipo comercial la revise" in html
 
 
 def test_medicion_y_chat_tienen_estilo_css_inline():
