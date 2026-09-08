@@ -5,7 +5,7 @@ import json
 from sentence_transformers import SentenceTransformer, util
 
 MODELO_EMBEDDINGS = "paraphrase-multilingual-MiniLM-L12-v2"
-UMBRAL_SIMILITUD = 0.75
+UMBRAL_SIMILITUD = 0.85
 
 _modelo = None
 

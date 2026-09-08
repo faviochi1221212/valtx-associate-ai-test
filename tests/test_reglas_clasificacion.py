@@ -227,3 +227,26 @@ def test_hablar_con_alguien_es_categoria_d():
     resultado = clasificar_por_reglas(texto)
     assert resultado["categoria"] == "d"
     assert resultado["respuesta"] == RESPUESTA_D
+
+
+def test_producto_danado_fuera_de_plazo_es_categoria_d():
+    texto = normalizar(
+        "Un producto llegó dañado y ya pasó el plazo de devolución, ¿qué hacen?"
+    )
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "d"
+    assert resultado["respuesta"] == RESPUESTA_D
+
+
+def test_garantia_extendida_es_categoria_b():
+    texto = normalizar("¿El Producto Alfa viene con garantía extendida?")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "b"
+    assert resultado["respuesta"] == RESPUESTA_B
+
+
+def test_descuento_vigente_es_categoria_b():
+    texto = normalizar("¿Sigue vigente el descuento de fin de año?")
+    resultado = clasificar_por_reglas(texto)
+    assert resultado["categoria"] == "b"
+    assert resultado["respuesta"] == RESPUESTA_B

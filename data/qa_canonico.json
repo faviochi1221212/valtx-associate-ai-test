@@ -123,13 +123,5 @@
       "¿Qué descuento aplica para pedidos de 200 unidades?"
     ],
     "respuesta": "Volumen del pedido ≥ 100 unidades: 10% de descuento."
-  },
-  {
-    "preguntas": [
-      "¿Dónde se publican las promociones temporales?",
-      "¿Qué promoción está vigente este mes?",
-      "¿Sigue vigente el descuento de fin de año?"
-    ],
-    "respuesta": "Se publican en el sistema comercial y no se incluyen en este documento."
   }
 ]
